@@ -51,7 +51,7 @@ main {
 
 .card {
   padding: 25px;
-  margin: 25px;
+  margin: 25px auto;
   width: 350px;
   border: 2px black solid;
   border-radius: 25px;
@@ -64,4 +64,11 @@ img {
   border: #333 solid 2px;
   border-radius: 25px;
   margin: 10px;
+}
+
+/* Resizes image be sure to include a div with class card-img around 
+the image*/
+.card-img img {
+  object-fit: contain;
+  width: 100%;
 }
